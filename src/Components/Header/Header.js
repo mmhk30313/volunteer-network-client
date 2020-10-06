@@ -9,9 +9,9 @@ import { useContext } from 'react';
 import { UserContext } from '../../App';
 const Header = () => {
     const [loggedInUser] = useContext(UserContext);
-    console.log(loggedInUser);
+    // console.log(loggedInUser);
     const {photoURL} = loggedInUser;
-    console.log(photoURL);
+    // console.log(photoURL);
     let abbr = "";
     if(loggedInUser.email){
         let {name} = loggedInUser;
