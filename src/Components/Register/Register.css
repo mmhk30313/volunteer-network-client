@@ -1,0 +1,30 @@
+.user-input{
+    width: 95% !important;
+    margin-bottom: 20px !important;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none !important;
+    border-bottom: 2px solid gray !important;
+    outline: none !important;
+}
+.user-input::placeholder{
+    font-size: 15px;
+}
+.register-form {
+    width: 400px;
+    padding: 10px;
+    height: fit-content;
+    margin: 10px auto;
+}
+
+@media(max-width: 462px){
+    .register-form{
+        margin-top: 50px !important;
+    }
+    @media (max-width: 420px) {
+        .register-form{
+            width: 95% !important;
+            margin-top: 100px !important;
+        }
+    }
+}

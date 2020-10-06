@@ -1,0 +1,36 @@
+.admin-form{
+    width: fit-content !important;
+    height: fit-content;
+    margin: 10px auto;
+}
+.label-input{
+    background-color: #eff6fb;
+}
+.admin-form .input{
+    margin: 15px 25px;
+}
+.admin-form .input-image{
+    display: none;
+}
+.admin-form .input:last-child{
+    position: relative !important;
+    bottom: 110px;
+}
+@media (max-width: 985px){
+    .admin-form .input:last-child{
+        position: initial !important;
+    }
+    .admin-form .input{
+        margin-left: 30% !important;
+    }
+    .admin-form{
+        width: initial !important;
+    }
+    @media (min-width: 150px){
+        .admin-form .col-md-5{
+            flex: 0 0 41.666667% !important;
+            max-width: 41.666667% !important;
+        }
+    }
+
+}

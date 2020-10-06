@@ -1,0 +1,28 @@
+.my-card{
+    margin: 0 0 15px 0 !important;
+    text-decoration: none !important;
+    /* position: relative !important; */
+    /* padding: 0 5px; */
+}
+.card{
+    border-radius: 10px !important;
+}
+.jumbotron{
+    margin-bottom: 0 !important;
+}
+.deck{
+    width: 100%;
+    min-height: 135pc;
+    position: absolute !important;
+    top: 550px;
+}
+#card-text{ 
+    text-align: center;
+    /* width: 90%; */
+    padding: 15px 0 0 0;
+    font-size: 18px;
+    height: 70px;
+    color: white;
+    /* line-height: 20px; */
+    /* padding-top: px; */
+}

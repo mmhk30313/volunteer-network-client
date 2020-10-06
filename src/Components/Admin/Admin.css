@@ -1,0 +1,18 @@
+.admin-logo {
+    height: 60px;
+}
+.user-logo, .plus-logo{
+    height: 28px;
+}
+
+/* .p-link{
+    color:#207FEE;
+    color: #1212dc;
+} */
+.p-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* .p-link:focus{
+    color: blue;
+} */

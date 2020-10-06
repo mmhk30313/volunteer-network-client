@@ -1,0 +1,25 @@
+.list-page{
+    padding: 5px 15px;
+    margin: 8px 0 !important;
+}
+.title{
+    width: 100%;
+    height: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    background: #ebe9e9;
+    /* border: 1px solid #000000; */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(101, 97, 97, 0.25);
+    border-radius: 13px;
+
+}
+
+.title p{
+    /* border: 2px solid limegreen; */
+    width: 20% !important;
+    margin: 10px 10px;
+}
+.title p:nth-child(2n){
+    width: 30% !important;
+}

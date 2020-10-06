@@ -1,0 +1,12 @@
+.task-img{
+    width: 100%;
+    height: 100% !important;
+}
+.cancel{
+    width: 60% !important;
+    margin: 0 auto !important;
+    font-size: 18px;
+    /* color: white !important; */
+    background-color: rgb(236, 235, 233);
+    overflow: hidden;
+}
