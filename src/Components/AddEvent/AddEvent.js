@@ -1,7 +1,9 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import uploadLogo from '../../logos/cloud-upload-outline 1.png';
 import './AddEvent.css';
 const AddEvent = () => {
+    const history = useHistory();
     const handleSubmit = (newEvent) =>{
         newEvent.preventDefault();
         //Its only for downloaded image in same folder of client server(../../images)
@@ -15,16 +17,24 @@ const AddEvent = () => {
             date: newEvent.target.date.value,
             description: newEvent.target.description.value,
             bgColor: "orangered",
+            oldEvent: true,
             imageSrc: split_path[split_path.length - 1],
         }
-        console.log(event);
+        // console.log(event);
         fetch(`https://myherokuvolunteers.herokuapp.com/addNetwork`,{
             method: 'POST',
             headers: {"Content-Type": 'application/json'},
             body: JSON.stringify(event)
         })
         .then(data => {
+            alert('Are you sure to add an event???')
             console.log(data);
+            if(data.ok){
+                history.push('/home');
+            }
+        })
+        .catch(err => {
+            alert('Sorry!!! Your event is invalid...')
         })
     }
     return (
@@ -39,7 +49,7 @@ const AddEvent = () => {
                 <label className='btn btn-outline-success col-md-5 input label-input' htmlFor="img"><img src={uploadLogo} style={{height: '30px'}} alt="U+"/> Upload image</label>
             </form>
             <div className="d-flex justify-content-end">
-                <button className='btn btn-primary' type='submit' form="useForm">Submit</button>    
+                <button className='btn btn-primary' type='submit' style={{margin:'10px'}} form="useForm">Submit</button>    
             </div>
         </div>
     );

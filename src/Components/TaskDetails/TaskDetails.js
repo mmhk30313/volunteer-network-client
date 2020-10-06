@@ -1,8 +1,9 @@
 import React from 'react';
+import extraVolunteer from '../../images/extraVolunteer.png';
 import './TaskDetails.css';
 const TaskDetails = ({task, handleTaskDelete}) => {
     // console.log(task);
-    const {name, imgSrc, eventTitle, date} = task;
+    const {name, imgSrc, eventTitle, date, oldEvent} = task;
     let abbrUserName = "";
     if(name){
         const abbrName = name.toUpperCase();
@@ -17,7 +18,7 @@ const TaskDetails = ({task, handleTaskDelete}) => {
         <div className='col-sm-4 col-md-5 border border-warning bg-light rounded task-card' style={{margin: '5px',padding: '10px',height: 'fit-content !important'}}>
             <div className="row justify-content-between">
                 <div className='col-md-4'>
-                    <img className='task-img' src={require(`../../images/${imgSrc}`)} alt="Sorry!! Please upload an image from (../../images) path after downloading"/>
+                    <img className='task-img' src={!oldEvent ?  require(`../../images/${imgSrc}`): extraVolunteer} alt="Sorry img didn't uploaded..."  />
                 </div>
                 <div className='col-md-8 text-end'>
                     <h6>{eventTitle}</h6>

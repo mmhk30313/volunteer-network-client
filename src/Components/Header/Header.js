@@ -9,7 +9,9 @@ import { useContext } from 'react';
 import { UserContext } from '../../App';
 const Header = () => {
     const [loggedInUser] = useContext(UserContext);
-    // console.log(loggedInUser);
+    console.log(loggedInUser);
+    const {photoURL} = loggedInUser;
+    console.log(photoURL);
     let abbr = "";
     if(loggedInUser.email){
         let {name} = loggedInUser;
@@ -39,7 +41,7 @@ const Header = () => {
                                 !loggedInUser.email 
                                 ? <Link to='/register/5f79e7a2ec4ac24be8700e58' className='btn btn-primary link-btn'>Register</Link>
                                 : <Link to='/' className='nav-link special-link'>
-                                    <Image className='text-dark user-img' src={loggedInUser.photoURL}></Image> 
+                                    <Image className='text-dark user-img' src={photoURL}></Image> 
                                     <strong> {abbr}</strong>
                                 </Link>
                             }

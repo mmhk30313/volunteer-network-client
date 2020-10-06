@@ -9,6 +9,7 @@
     /* overflow-x: hidden !important; */
     padding: 10px;
     margin: 25px !important;
+    justify-content: center !important;
 }
 .form {
     width: 80% !important;

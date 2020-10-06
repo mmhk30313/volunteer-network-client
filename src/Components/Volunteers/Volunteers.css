@@ -1,6 +1,7 @@
 .my-card{
     margin: 0 0 15px 0 !important;
     text-decoration: none !important;
+    height: 100% !important;
     /* position: relative !important; */
     /* padding: 0 5px; */
 }
@@ -12,9 +13,9 @@
 }
 .deck{
     width: 100%;
-    min-height: 135pc;
+    min-height: 163pc;
     position: absolute !important;
-    top: 550px;
+    top: 640px;
 }
 #card-text{ 
     text-align: center;
